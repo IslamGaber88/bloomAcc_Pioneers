@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20684DAF-A74D-4368-BFC4-322898E20FA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pioneers_Reports</RootNamespace>
+    <AssemblyName>Pioneers_Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=17.0.23.118, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts_Summary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Accounts_Summary.designer.cs">
+      <DependentUpon>Accounts_Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_Details_Income.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bus_Details_Income.Designer.cs">
+      <DependentUpon>Bus_Details_Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_SchoolsCount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bus_SchoolsCount.Designer.cs">
+      <DependentUpon>Bus_SchoolsCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_Dues.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bus_Dues.Designer.cs">
+      <DependentUpon>Bus_Dues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_Summary_Income.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bus_Summary_Income.Designer.cs">
+      <DependentUpon>Bus_Summary_Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DroppedOut_Students.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DroppedOut_Students.Designer.cs">
+      <DependentUpon>DroppedOut_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Real_General_Payment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Real_General_Payment.Designer.cs">
+      <DependentUpon>Real_General_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General_Payment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General_Payment.Designer.cs">
+      <DependentUpon>General_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General_Payment_Total.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General_Payment_Total.Designer.cs">
+      <DependentUpon>General_Payment_Total.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grade_Cost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grade_Cost.Designer.cs">
+      <DependentUpon>Grade_Cost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Students.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="New_Students.Designer.cs">
+      <DependentUpon>New_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Receipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Payment_Receipt.Designer.cs">
+      <DependentUpon>Payment_Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentGrade_Count.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentGrade_Count.Designer.cs">
+      <DependentUpon>StudentGrade_Count.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students_Names.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Students_Names.Designer.cs">
+      <DependentUpon>Students_Names.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Account.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_Account.Designer.cs">
+      <DependentUpon>Student_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Dues.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_Dues.Designer.cs">
+      <DependentUpon>Student_Dues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Expenses_Count.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_Expenses_Count.designer.cs">
+      <DependentUpon>Student_Expenses_Count.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Expenses_Payment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_Expenses_Payment.Designer.cs">
+      <DependentUpon>Student_Expenses_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Refunds.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_Refunds.Designer.cs">
+      <DependentUpon>Student_Refunds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_RegFees.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Student_RegFees.Designer.cs">
+      <DependentUpon>Student_RegFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Treasury.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Treasury.Designer.cs">
+      <DependentUpon>Treasury.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounts_Summary.resx">
+      <DependentUpon>Accounts_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus_Details_Income.resx">
+      <DependentUpon>Bus_Details_Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus_SchoolsCount.resx">
+      <DependentUpon>Bus_SchoolsCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus_Dues.resx">
+      <DependentUpon>Bus_Dues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus_Summary_Income.resx">
+      <DependentUpon>Bus_Summary_Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DroppedOut_Students.resx">
+      <DependentUpon>DroppedOut_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Real_General_Payment.resx">
+      <DependentUpon>Real_General_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General_Payment.resx">
+      <DependentUpon>General_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General_Payment_Total.resx">
+      <DependentUpon>General_Payment_Total.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grade_Cost.resx">
+      <DependentUpon>Grade_Cost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Students.resx">
+      <DependentUpon>New_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Receipt.resx">
+      <DependentUpon>Payment_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="StudentGrade_Count.resx">
+      <DependentUpon>StudentGrade_Count.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students_Names.resx">
+      <DependentUpon>Students_Names.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Account.resx">
+      <DependentUpon>Student_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Dues.resx">
+      <DependentUpon>Student_Dues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Expenses_Count.resx">
+      <DependentUpon>Student_Expenses_Count.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Expenses_Payment.resx">
+      <DependentUpon>Student_Expenses_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Refunds.resx">
+      <DependentUpon>Student_Refunds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_RegFees.resx">
+      <DependentUpon>Student_RegFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treasury.resx">
+      <DependentUpon>Treasury.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
