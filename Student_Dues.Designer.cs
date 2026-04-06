@@ -361,9 +361,7 @@ namespace Pioneers_Reports
             // 
             // groupFooterSection1
             // 
-            formattingRule2.Filters.Add(new Telerik.Reporting.Filter("=IIF(Fields.DiscountID Is Null, SUM(Fields.CurrentExpensesCost), SUM(Fields.Curre" +
-            "ntExpensesCost -(Fields.CurrentExpensesCost* Fields.Value/100)))-\r\nSUM(Fields.To" +
-            "talPaied)\r\n\r\n", Telerik.Reporting.FilterOperator.Equal, "0"));
+            formattingRule2.Filters.Add(new Telerik.Reporting.Filter("= SUM(Fields.ExpensesCostAfterDiscount)-SUM(Fields.TotalPaied)", Telerik.Reporting.FilterOperator.Equal, "0"));
             formattingRule2.Style.Visible = false;
             this.groupFooterSection1.ConditionalFormatting.AddRange(new Telerik.Reporting.Drawing.FormattingRule[] {
             formattingRule2});
