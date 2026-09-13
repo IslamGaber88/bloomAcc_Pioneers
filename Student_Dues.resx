@@ -128,9 +128,9 @@ SELECT        SubscriptionID, StudentID, SchoolYearID, GradeID, SchoolID, GradeC
                          ExpensesTitle, IsMandatory, ApplicableForDiscount, DiscountTitle, COALESCE (Value, 0) AS Value, IsPercentage, TotalDiscount, ExpensesCostAfterDiscount, TotalPaied, CurrentExpensesCost, IsHide, Stu_FirstName, 
                          Stu_MiddleName, Stu_LastName, StudentStatusID, ShareFees
 FROM            dbo.Vw_Subscription
+ 
 where (SchoolID=@SchoolID) and (SchoolYearID=@SchoolYearID) and (GradeID=@GradeID or @GradeID Is NULL) and (ExpensesID =@ExpensesID) and (StudentStatusID in (1,2))
-
-</value>
+and (ISNULL(ExpensesCostAfterDiscount,0) - ISNULL(TotalPaied,0) &lt;&gt; 0)</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Value" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

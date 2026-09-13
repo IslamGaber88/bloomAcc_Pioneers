@@ -361,7 +361,7 @@ namespace Pioneers_Reports
             // 
             // groupFooterSection1
             // 
-            formattingRule2.Filters.Add(new Telerik.Reporting.Filter("= SUM(Fields.ExpensesCostAfterDiscount)-SUM(Fields.TotalPaied)", Telerik.Reporting.FilterOperator.NotEqual, "0"));
+            formattingRule2.Filters.Add(new Telerik.Reporting.Filter("= SUM(Fields.ExpensesCostAfterDiscount)-SUM(Fields.TotalPaied)", Telerik.Reporting.FilterOperator.Equal, "0"));
             formattingRule2.Style.Visible = false;
             this.groupFooterSection1.ConditionalFormatting.AddRange(new Telerik.Reporting.Drawing.FormattingRule[] {
             formattingRule2});
